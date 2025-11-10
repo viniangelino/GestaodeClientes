@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+
+<head>
+    <title>Site Gestão de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestão de Clientes</h1>
+
+    <div class="botaologin">
+        <a href="login.html">Login</a>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="1home.html">Home</a></li>
+                <li><a href="2.0carteiraclientes.html">Carteira de Clientes</a></li>
+                <li><a href="3pedidos.html">Pedidos</a></li>
+                <li><a href="4contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <h2>Área de Login</h2>
+
+        <form class="login-form">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+            <button type="submit" id="btnEntrar">Entrar</button>
+
+            <a href="#" id="esqueceuSenha" class="forgot-link">Esqueceu a senha?</a>
+        </form>
+    </section>
+
+    <script>
+        // Evita envio real do formulário e mostra alerta
+        document.querySelector(".login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("✅ Login realizado com sucesso!");
+        });
+
+        // Alerta ao clicar em 'Esqueceu a senha?'
+        document.getElementById("esqueceuSenha").addEventListener("click", function(event) {
+            event.preventDefault();
+            alert("📞 Esqueceu sua senha?\nEntre em contato pelo WhatsApp: 4002-8922");
+        });
+    </script>
+    
+</body>
+    <footer>
+        <h4>@2025 - Projeto desenvolvimento Web - Universidade Positivo.</h4>
+    </footer>
+</html>

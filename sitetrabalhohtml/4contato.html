@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+
+<head>
+    <title>Site Gestão de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestão de Clientes</h1>
+    <div class="botaologin">
+        <a href="login.html">Login</a>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="1home.html">Home</a></li>
+                <li><a href="2.0carteiraclientes.html">Carteira de Clientes</a></li>
+                <li><a href="3pedidos.html">Pedidos</a></li>
+                <li><a href="4contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+    <h1>Cadastro novo cliente</h1>
+    <form>
+        <label for="empresa">Nome da Empresa:</label>
+        <input type="text" id="empresa" name="empresa" placeholder="Digite o nome da empresa" required>
+
+        <label for="cnpj">CNPJ:</label>
+        <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="origem">Onde conheceu a gente?</label>
+        <select id="origem" name="origem" required>
+            <option value="">Selecione uma opção</option>
+            <option value="redes-sociais">Redes Sociais</option>
+            <option value="indicacao">Indicação de outro cliente</option>
+            <option value="site">Busca no Google / Site</option>
+            <option value="eventos">Eventos / Feiras</option>
+            <option value="outros">Outros</option>
+        </select>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="promocoes" name="promocoes">
+            <label for="promocoes">Desejo receber avisos e promoções no e-mail</label>
+        </div>
+
+        <button type="submit">Quero me tornar cliente</button>
+    </form>
+
+    </section>
+    
+    <script>
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // impede o envio real do formulário
+        alert("✅ Cadastro enviado com sucesso! Entraremos em contato em breve.");
+    });
+    </script>
+
+</body>
+    <footer>
+        <h4>@2025 - Projeto desenvolvimento Web - Universidade Positivo.</h4>
+    </footer>
+</html>

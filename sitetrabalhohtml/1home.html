@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+
+<head>
+    <title>Site Gestão de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gestão de Clientes</h1>
+
+    <div class="botaologin">
+        <a href="#" onclick="verificarCliente()">Login</a>
+    </div>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="1home.html">Home</a></li>
+                <li><a href="2.0carteiraclientes.html">Carteira de Clientes</a></li>
+                <li><a href="3pedidos.html">Pedidos</a></li>
+                <li><a href="4contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Bem-vindo ao Sistema de Gestão de Clientes</h2>
+        <h4>
+            Nós somos uma plataforma desenvolvida para facilitar o controle, organização e acompanhamento de informações essenciais sobre seus clientes e seus pedidos.
+            <p>
+                Nosso objetivo é oferecer uma solução simples e funcional para centralizar os dados dos clientes, gerenciar suas carteiras e registrar compras e pedidos de maneira prática e intuitiva.
+            </p> 
+
+            <p>Com este sistema, você poderá:</p>
+
+            <ul>
+                <li>Cadastrar novos clientes de forma rápida e organizada, com informações como nome, cidade, UF e data de cadastro. </li>
+                <li>Visualizar e gerenciar a carteira de clientes, garantindo um controle completo sobre sua base de contatos.</li>
+                <li>Registrar e acompanhar os pedidos realizados, incluindo número do pedido, valor, produtos e data da compra.</li>
+                <li>Facilitar o contato com novos clientes, por meio de um formulário simples na aba Contato, onde é possível enviar informações para cadastro e aprovação.</li>
+            </ul> 
+            <p>Este site foi desenvolvido com foco em usabilidade e clareza, sendo uma ótima ferramenta para demonstrar o funcionamento de um sistema básico de gestão de clientes — ideal para pequenas empresas, estudantes e profissionais que desejam apresentar um portfólio prático e funcional.</p>
+            
+        </h4>
+    </section>
+    
+    <script>
+        // Função que exibe o alerta ao clicar no botão de login
+        function verificarCliente() {
+            const resposta = confirm("Se você já é nosso cliente. Pressione OK, se ainda nao é pressione CANCELAR.");
+            
+            if (resposta) {
+                // OK → vai para login.html
+                window.location.href = "login.html";
+            } else {
+                // Cancelar → vai para contato.html
+                window.location.href = "contato.html";
+            }
+        }
+    </script>
+
+</body>
+    <footer>
+        <h4>@2025 - Projeto desenvolvimento Web - Universidade Positivo.</h4>
+    </footer>
+</html>
